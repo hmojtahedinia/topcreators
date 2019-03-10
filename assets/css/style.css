@@ -1,4 +1,8 @@
 
+@font-face{
+    font-family: "Kaushan";
+    src: url("./font/KaushanScript-Regular.otf");
+}
 
 #header {
     background-color: rgb(67, 98, 238);
@@ -49,7 +53,7 @@
     color: #ffffff;
     font-display: auto;
     font-weight: bolder;
-    font-family: 'Neon', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-family: "Kaushan";
     text-align: center;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
 }
@@ -57,3 +61,58 @@
 #footer {
     text-align: center;
 }
+
+#chattingCol{
+    background-color: rgb(110, 226, 43);
+}
+
+
+#messageArea{
+    background-color: rgb(178, 247, 157);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    width: 19em;
+    height: 17em;
+    overflow: scroll;
+}
+
+#chatHere{
+    font-family: "Kaushan";
+    text-align: center;
+    font-size: 2em;
+}
+
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+textarea{
+    border-radius: 10px;
+}
+
+button {
+    padding: 7.5px 12.5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 7.5px;
+    box-shadow: 0 4.5px #999;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2.5px #666;
+    transform: translateY(2px);
+  }
