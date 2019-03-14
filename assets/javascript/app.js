@@ -7,10 +7,10 @@ var title ="";
 $(document).ready(function(){
         $(".movieNewsContainer").hide();
 
-         var images = ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg'];
-         var footerImages = ['5.jpg', '6.png', '7.jpg', '8.jpg', '9.jpg'];
+         var images = ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg'];
+         var footerImages = ['11.jpg', '12.png', '13.jpg', '14.jpg', '15.jpg'];
          $('#header').css({'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
-         $('#footer').css({'background-image': 'url(assets/images/' + footerImages[Math.floor(Math.random() * images.length)] + ')'});
+         $('#footer').css({'background-image': 'url(assets/images/' + footerImages[Math.floor(Math.random() * footerImages.length)] + ')'});
         addNews();
         //The function below adds Top 10 now playing movies right now
         $("#nowPlaying").on("click",function(event){
@@ -87,12 +87,12 @@ $(document).ready(function(){
 
 
             database.ref().on("value", function (snapshot) {
-                console.log(snapshot.val());
-                console.log(snapshot.val().message);
+                //console.log(snapshot.val());
+                //console.log(snapshot.val().message);
                 database.ref().set(snapshot.val().message);
                 $("#messageArea").prepend("<br>" + snapshot.val().message + "</br>");
             }, function (errorObject) {
-                console.log("The read failed: " + errorObject.code);
+                //console.log("The read failed: " + errorObject.code);
             });
        
 
@@ -111,7 +111,7 @@ function addNews()
         method: "GET"
         })
         .then(function(response) {
-            console.log(response);
+            //console.log(response);
             
             
             for(var i=0;i<20;i++)
@@ -159,7 +159,7 @@ function addQueryNews(title)
         method: "GET"
         })
         .then(function(response) {
-            console.log(response);
+            //console.log(response);
             
             for(var i=19;i>=0;i--)
             {
