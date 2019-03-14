@@ -14,9 +14,15 @@
 }
 
 @font-face{
-    font-family: "Kaushan";
-    src: url("../images/font/KaushanScript-Regular.otf");
+    font-family: "Neon";
+    src: url("font/Neon.ttf");
 }
+
+@font-face{
+    font-family: "Kaushan";
+    src: url("font/KaushanScript-Regular.otf");
+}
+
 
 #chattingCol{
     background-color: #4CAF50;
@@ -189,7 +195,7 @@ textarea{
     color: #ffffff;
     font-display: auto;
     font-weight: bolder;
-    font-family: 'Neon', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-family: 'Neon', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif';
     text-align: center;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
 }
@@ -201,7 +207,7 @@ textarea{
     -moz-background-size:  contain;
     -o-background-size:  contain;
     background-size:  contain;  
-    
+
     text-align: center;
     font-size: 2vw;
     color: #ffffff;
